@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "hello" => "greetings#index"
+  get "morning" => "greetings#goodmorning"
+
+  get "age" => "profiles#myage"
+  get "height" => "profiles#myheight"
+
+  get "user" => "users#index"
 end
