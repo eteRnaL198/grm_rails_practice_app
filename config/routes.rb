@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get "height" => "profiles#myheight"
 
   get "user" => "users#index"
+
+  get "forms" => "forms#index"
+  post "forms" => "forms#create"
 end
