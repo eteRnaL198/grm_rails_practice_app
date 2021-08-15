@@ -1,0 +1,5 @@
+<p>フォームの練習</p>
+<%= form_with url: "/forms", local: true do |f|  %>
+  <%= f.text_field :title %>
+  <%= f.submit "送信" %>
+<% end %>
